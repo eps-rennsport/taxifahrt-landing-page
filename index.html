@@ -34,7 +34,7 @@
         <ul id="main-menu">
           <li class="menu-item scroll"><a href="#">Grüne Hölle</a></li>
           <li class="menu-item scroll"><a href="#">Ablauf</a></li>
-          <li class="menu-item scroll"><a href="#">Unsere Fahrzeuge</a></li>
+          <li class="menu-item scroll"><a href="#fahrzeuge">Unsere Fahrzeuge</a></li>
           <li class="menu-item scroll"><a href="#">Kosten</a></li>
           <li class="menu-item scroll"><a href="#">Kontakt</a></li>
         </ul><!-- #main-menu -->
@@ -54,6 +54,74 @@
           </div>
         </article>
 
+        <article id="fahrzeuge" class="section-wrapper clearfix" data-custom-background-img="images/start-finish.jpg">
+          <div class="content-wrapper clearfix">
+            <div class="col-sm-11 pull-right">
+              <h1 class="section-title">Unsere Fahrzeuge</h1>
+              <section class="feature-columns row clearfix">
+                <article class="feature-col col-md-6">
+                  <a href="" class="thumbnail linked" onclick="populate_and_open_modal(event, 'modal-bmw-e90');">
+                    <div class="image-container">
+                      <img data-img-src="images/bmw-e90-325i.jpg" class="lazy item-thumbnail" alt="BMW E90 325i von EPS-Rennsport">
+                    </div>
+                    <div class="caption">
+                      <h5>BMW E90 325i</h5>
+                      <p>Baujahr 2005<br/>230 PS bei 1.365 kg<br/>Klasse V4</p>
+                    </div>
+                  </a>
+                  <div class="content-to-populate-in-modal" id="modal-bmw-e90">
+                    <h1>BMW E90 325i</h1>
+                    <p>Bj. 2005, aufgebaut 2019, 230 PS bei 1.365 kg (reglementiert), eingesetzt in der Klasse V4. Komplett rennfertig mit FIA-Sicherheitskäfig, Datalogger, Funksystem, Competition-Fahrwerk von KW, etc.</p>
+                    <div id="unique-id-for-image-slider" class="owl-carousel popup-image-gallery">
+                      <div>
+                        <h6 class="caption">Frontansicht</h6>
+                        <img class="lazyOwl" data-src="images/bmw-e90/front.jpg" alt="Frontansicht des BMW E90 325i">
+                      </div>
+                      <div>
+                        <h6 class="caption">Seitenansicht</h6>
+                        <img class="lazyOwl" data-src="images/bmw-e90/side.jpg" alt="Seitenansicht des BMW E90 325i">
+                      </div>
+                      <div>
+                        <h6 class="caption">Heckansicht</h6>
+                        <img class="lazyOwl" data-src="images/bmw-e90/rear.jpg" alt="Heckansicht des BMW E90 325i">
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                <article class="feature-col col-md-6">
+                  <a href="" class="thumbnail linked" onclick="populate_and_open_modal(event, 'modal-porsche-cayman');">
+                    <div class="image-container">
+                      <img data-img-src="images/porsche-cayman-gt4-cs.jpg" class="lazy item-thumbnail" alt="Porsche Cayman 718 GT4 Clubsport von EPS-Rennsport">
+                    </div>
+                    <div class="caption">
+                      <h5>Porsche Cayman 718 GT4 Clubsport</h5>
+                      <p>Baujahr 2019<br/>425 PS bei 1.315 kg<br/>Klasse Cup3 Manthey Trophy</p>
+                    </div>
+                  </a>
+                  <div class="content-to-populate-in-modal" id="modal-porsche-cayman">
+                    <h1>Porsche Cayman 718 GT4 Clubsport</h1>
+                    <p>Bj. 2019, 425 PS bei 1.315 kg (reglementiert), eingesetzt in der Klasse Cup3 Manthey Trophy. Komplett rennfertig mit FIA-Sicherheitskäfig, Datalogger, Digitalfunk, KW-Fahrwerk, etc.</p>
+                    <div id="unique-id-for-image-slider" class="owl-carousel popup-image-gallery">
+                      <div>
+                        <h6 class="caption">Frontansicht</h6>
+                        <img class="lazyOwl" data-src="images/porsche-cayman/front.jpg" alt="Frontansicht des Porsche Cayman 718 GT4 Clubsport">
+                      </div>
+                      <div>
+                        <h6 class="caption">Seitenansicht</h6>
+                        <img class="lazyOwl" data-src="images/porsche-cayman/side.jpg" alt="Seitenansicht des Porsche Cayman 718 GT4 Clubsport">
+                      </div>
+                      <div>
+                        <h6 class="caption">Heckansicht</h6>
+                        <img class="lazyOwl" data-src="images/porsche-cayman/rear.jpg" alt="Heckansicht des Porsche Cayman 718 GT4 Clubsport">
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </section>
+            </div>
+          </div>
+        </article>
+
       </section>
       <section id="footer">
         <div id="go-to-top" onclick="scroll_to_top();"><span class="icon glyphicon glyphicon-chevron-up"></span></div>
@@ -64,6 +132,16 @@
         </ul>
         <div class="footer-text-line">&copy; 2020 ePS-Rennsport</div>
       </section>
+    </div>
+
+    <div class="modal fade" id="common-modal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <div class="modal-body clearfix">
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -81,6 +159,6 @@
     <script src="assets/js/initialise-functions.js"></script>
     <!--[if lt IE 9]>
       <script>contact_form_IE9_placeholder_fix();</script>
-    <![endif]--> 
+    <![endif]-->
   </body>
 </html>
