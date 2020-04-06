@@ -364,7 +364,7 @@ function set_section_to_active(target_section_id, clicked_menu_item_id, called_o
 
                 $(function () {
                     $.vegas({ src: section_custom_background, fade: transition_speed, });
-                    if (overlay_enabled) $.vegas('overlay', { src: 'assets/images/theme_images/background-image-overlay-full.png', opacity: overlay_opacity });
+                    if (overlay_enabled) $.vegas('overlay', { src: 'images/background.png', opacity: overlay_opacity });
                 });
             }
             // end: if target section wrapper has custom background set
@@ -377,7 +377,7 @@ function set_section_to_active(target_section_id, clicked_menu_item_id, called_o
             if (default_bg != "" && default_bg !== undefined) {
                 $(function () {
                     $.vegas({ src: default_bg, fade: 1500, });
-                    if (overlay_enabled) $.vegas('overlay', { src: 'assets/images/theme_images/background-image-overlay-full.png', opacity: overlay_opacity });
+                    if (overlay_enabled) $.vegas('overlay', { src: 'images/background.png', opacity: overlay_opacity });
                 });
                 $("body").addClass("defualt-bg-set");
             }
