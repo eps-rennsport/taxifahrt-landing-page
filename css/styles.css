@@ -1,4 +1,5 @@
 @import url('fonts/stylesheet.css');
+
 /* ====================================================
    GENERAL STYLES
    ==================================================== */
@@ -663,8 +664,7 @@ table {
     }
 }
 
-@media (min-width: 992px) {
-}
+@media (min-width: 992px) {}
 
 @media (min-width: 1200px) {}
 
@@ -1801,7 +1801,7 @@ h6 {
 
 /* ====================================================
    TABS
-   - styling inspiration and guide: 
+   - styling inspiration and guide:
    - http://tympanus.net/codrops/2014/09/02/tab-styles-inspiration/
    ==================================================== */
 
